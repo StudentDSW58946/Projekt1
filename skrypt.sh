@@ -13,4 +13,13 @@ case $1 in
       echo "Data: $(date)" >> $filename
     done
     ;;
+  --help)
+    echo "Dostępne opcje:"
+    echo "--date       - wyświetla dzisiejszą datę"
+    echo "--logs [N]   - tworzy N plików logx.txt (domyślnie 100)"
+    echo "--help       - pokazuje tę pomoc"
+    ;;
+  *)
+    echo "Nieznana opcja. Użyj --help"
+    ;;
 esac
